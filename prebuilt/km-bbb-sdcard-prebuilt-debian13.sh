@@ -121,9 +121,9 @@ sync
 	#sudo mkfs.ext4 -L rootfs ${media}1
 
 	if [ $media == "/dev/mmcblk0" ]; then
-		sudo  mkfs.ext4  ${media}p1 -L rootfs
+		sudo  mkfs.ext4 -F ${media}p1 -L rootfs
 	else
-		sudo  mkfs.ext4  ${media}1 -L rootfs
+		sudo  mkfs.ext4 -F ${media}1 -L rootfs
 	fi
 	# sudo mkfs.ext4 -L rootfs ${DISK}1
 	echo -e "${Green}-----------------------------"
