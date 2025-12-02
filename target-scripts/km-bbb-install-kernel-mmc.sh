@@ -9,12 +9,15 @@ if [ -f uEnv.txt ]; then
 
 	sudo rm -rf  /boot/vmlinuz-4.19.94-Kernel-Masters-*
 	sudo rm -rf  /boot/config-4.19.94-Kernel-Masters-*
-	echo "copying vmlinux and config files"
+	sudo rm -rf  /boot/System.map-4.19.94-Kernel-Masters-*
+	echo "copying vmlinux, config and System.map files"
 	echo "---------------------------------------------"
 	echo  "cp ${KERNEL_UTS}.zImage /boot/vmlinuz-${KERNEL_UTS}"
 	sudo cp ./${KERNEL_UTS}.zImage   /boot/vmlinuz-${KERNEL_UTS}
 	echo "cp ./config-${KERNEL_UTS}   /boot/"
 	sudo cp ./config-${KERNEL_UTS}   /boot/
+	echo "cp ./System.map-${KERNEL_UTS}   /boot/"
+	sudo cp ./System.map-${KERNEL_UTS}   /boot/
 	echo ""
 
 	sudo rm -rf  /boot/dtbs/4.19.94-Kernel-Masters-*
@@ -46,10 +49,11 @@ if [ -f uEnv.txt ]; then
 	sudo tar -xf ./${KERNEL_UTS}-modules.tar.gz  -C  /usr/
 	echo ""
 
-	echo "Removing zImage, dtb, modules and config"
+	echo "Removing zImage, dtb, modules, config and System.map"
 	echo "---------------------------------------------"
 	rm ./${KERNEL_UTS}.zImage
 	rm ./config-${KERNEL_UTS}
+	rm ./System.map-${KERNEL_UTS}
 	#rm am335x-boneblack.dtb
 	#rm km-bbb-am335x.dtb
 	rm ./${KERNEL_UTS}-dtbs.tar.gz
