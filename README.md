@@ -28,12 +28,12 @@ $ cd ~/KM_GITHUB/km-bbb-debian13-prebuilt/
 ## MLO, U-boot & Kernel Versions
 
 MLO [SPL] Version:
-`U-Boot SPL 2019.04KernelMasters-g9d37c406 (Jan 10 2021 - 23:27:22 +0530)`
+`U-Boot SPL 2022.04-gcb465595-dirty (Dec 02 2025 - 17:34:16 +0530)`
 
 U-Boot Version:
-`U-Boot 2019.04KernelMasters-g9d37c406 (Jan 10 2021 - 23:27:22 +0530)`
-`Source: KM_GITHUB/beagleboneblack-uboot.git - Tag: km-bbb`
+`U-Boot 2022.04-gcb465595-dirty (Dec 02 2025 - 17:34:16 +0530)`
+`Source: https://github.com/kernelmasters/km-bbb-uboot-2022.git - branch: km-bbb-porting-wip-1 commit: 3decb5fdf48f22c42deed05c930990b881d09d2a`
 
 Kernel Version:
-`Linux KM-BBB 4.19.94-gc8fc2bfff-dirty #1 SMP Fri Dec 25 17:17:24 IST 2020 armv7l GNU/Linux`
-`Source: KM_GITLAB/beagleboneblack-kernel.git - Commit ID:25ae2381`
+`Linux km-bbb-expansion-board 5.10.168-Kernel-Masters+ #1 SMP PREEMPT Tue Dec 2 19:55:18 IST 2025 armv7l GNU/Linux`
+`Source: https://github.com/kernelmasters/km-bbb-kernel-5.10.git - branch: km-bbb-porting-wip-1 commit: f159b08eef6be0c62618d90f0f0e673c8538ac6b`
