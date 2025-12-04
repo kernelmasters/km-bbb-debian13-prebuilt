@@ -177,6 +177,15 @@ debian_fs_copy_sd()
 	fi
 	sudo cp ./MLO   /mnt/rootfs/boot/uboot/
 	sudo cp ./u-boot.img   /mnt/rootfs/boot/uboot/
+
+
+	# Update u-boot and kernel target installation scripts with latest from repository
+	echo -e "${Red}sudo cp ../target-scripts/km-bbb-install-bl-mmc.sh /mnt/rootfs/home/km/install/${NC}"
+	sudo cp ../target-scripts/km-bbb-install-bl-mmc.sh /mnt/rootfs/home/km/install/
+	echo -e "${Red}sudo cp ../target-scripts/km-bbb-install-kernel-mmc.sh /mnt/rootfs/home/km/install/${NC}"
+	sudo cp ../target-scripts/km-bbb-install-kernel-mmc.sh /mnt/rootfs/home/km/install/
+
+	# Now make sure the data is all written to the SD Card
 	echo -e "${Red}syncing${NC}"
 	sudo sync
 
