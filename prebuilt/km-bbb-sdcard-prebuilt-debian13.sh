@@ -180,10 +180,14 @@ debian_fs_copy_sd()
 
 
 	# Update u-boot and kernel target installation scripts with latest from repository
-	echo -e "${Red}sudo cp ../target-scripts/km-bbb-install-bl-mmc.sh /mnt/rootfs/home/km/install/${NC}"
-	sudo cp ../target-scripts/km-bbb-install-bl-mmc.sh /mnt/rootfs/home/km/install/
-	echo -e "${Red}sudo cp ../target-scripts/km-bbb-install-kernel-mmc.sh /mnt/rootfs/home/km/install/${NC}"
-	sudo cp ../target-scripts/km-bbb-install-kernel-mmc.sh /mnt/rootfs/home/km/install/
+	echo -e "${Red}sudo cp ../target-scripts/install-dir/km-bbb-install-bl-mmc.sh /mnt/rootfs/home/km/install/${NC}"
+	sudo cp ../target-scripts/install-dir/km-bbb-install-bl-mmc.sh /mnt/rootfs/home/km/install/
+	echo -e "${Red}sudo cp ../target-scripts/install-dir/km-bbb-install-kernel-mmc.sh /mnt/rootfs/home/km/install/${NC}"
+	sudo cp ../target-scripts/install-dir/km-bbb-install-kernel-mmc.sh /mnt/rootfs/home/km/install/
+
+	# Update scripts that flash eMMC from SD card
+	echo -e "${Red}sudo cp -r ../target-scripts/opt-dir/scripts /mnt/rootfs/opt/${NC}"
+	sudo cp -r ../target-scripts/opt-dir/scripts /mnt/rootfs/opt/
 
 	# Now make sure the data is all written to the SD Card
 	echo -e "${Red}syncing${NC}"
