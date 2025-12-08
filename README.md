@@ -28,12 +28,12 @@ $ cd ~/KM_GITHUB/km-bbb-debian13-prebuilt/
 ## MLO, U-boot & Kernel Versions
 
 MLO [SPL] Version:
-`U-Boot SPL 2022.04-gcb465595-dirty (Dec 02 2025 - 17:34:16 +0530)`
+`U-Boot SPL 2022.04-g00ee8651-dirty (Dec 08 2025 - 17:22:13 +0530)`
 
 U-Boot Version:
-`U-Boot 2022.04-gcb465595-dirty (Dec 02 2025 - 17:34:16 +0530)`
-`Source: https://github.com/kernelmasters/km-bbb-uboot-2022.git - branch: km-bbb-porting-wip-1 commit: 3decb5fdf48f22c42deed05c930990b881d09d2a`
+`U-Boot 2022.04-g00ee8651-dirty (Dec 08 2025 - 17:22:13 +0530)`
+`Source: https://github.com/kernelmasters/km-bbb-uboot-2022.git - branch: km-bbb-porting-wip-1 commit: `e73db0419d86fa58aa62203308779a2feea6e964
 
 Kernel Version:
-`Linux km-bbb-expansion-board 5.10.168-Kernel-Masters+ #1 SMP PREEMPT Tue Dec 2 19:55:18 IST 2025 armv7l GNU/Linux`
-`Source: https://github.com/kernelmasters/km-bbb-kernel-5.10.git - branch: km-bbb-porting-wip-1 commit: f159b08eef6be0c62618d90f0f0e673c8538ac6b`
+`Linux km-bbb-expansion-board 5.10.168-Kernel-Masters+ #1 SMP PREEMPT Mon Dec 8 17:10:40 IST 2025 armv7l GNU/Linux`
+`Source: https://github.com/kernelmasters/km-bbb-kernel-5.10.git - branch: km-bbb-porting-wip-2 commit: e0fac52f4db4ca3125e9c31df68b92535a7d12c6`
